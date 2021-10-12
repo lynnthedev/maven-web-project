@@ -5,8 +5,26 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
   
+  <!-- JUnit Jupiter - for selenium -->
+  <properties>
+  	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  	<maven.complier.source>1.8</maven.complier.source>
+  	<maven.complier.target>1.8</maven.complier.target>
+  	
+  	<junit-jupiter.groupId>org.junit.jupiter</junit-jupiter.groupId>
+  	<junit-jupiter.artifactId>junit-jupiter</junit-jupiter.artifactId>
+  	<junit-jupiter.version>5.7.0</junit-jupiter.version>
+  </properties>
   
   <dependencies>
+	<!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter -->
+	<!-- JUnit Jupiter - for selenium -->
+	<dependency>
+		<groupId>org.junit.jupiter</groupId>
+		<artifactId>junit-jupiter</artifactId>
+		<version>5.7.0</version>
+		<scope>test</scope>
+	</dependency>
 	<dependency>
 		<groupId>javax.servlet</groupId>
 		<artifactId>javax.servlet-api</artifactId>
